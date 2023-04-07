@@ -60,3 +60,7 @@ myNum = 20; // error, cannot change value
 const int myNumber; // error, must assign value while declaring
 ```
 ---
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
