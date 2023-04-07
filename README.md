@@ -1,7 +1,8 @@
 # Learn-C-Sharp
 
-> C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.
-> C# is used to develop web apps, desktop apps, mobile apps, games and much more.
+C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.
+
+C# is used to develop web apps, desktop apps, mobile apps, games and much more.
 
 ```
 using System;
@@ -51,7 +52,7 @@ double d1 = 12E4D; // will print 120000
 ```
 ---
 - You can add the **const** keyword in front of the variable type, that value will not to be change in any case.
-- ***You cannot declare a constant variable without assigning the value.** If you do, an error will occur.
+- Cannot declare a constant variable without assigning the value. If you do, an error will occur.
 ```
 const int myNum = 15;
 myNum = 20; // error, cannot change value
