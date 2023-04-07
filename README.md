@@ -32,6 +32,7 @@ namespace HelloWorld
 - **char** - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
 - **string** - stores text, such as "Hello World". String values are surrounded by double quotes
 - **bool** - stores values with two states: true or false
+
 Data Type | Size | Description
 ------------- | ----- | ----------
 int | 4 bytes | Stores whole numbers from -2,147,483,648 to 2,147,483,647
