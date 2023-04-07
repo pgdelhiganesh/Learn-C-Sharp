@@ -27,11 +27,6 @@ namespace HelloWorld
 - **//** Single-line command.
 - **/*** Multi-line command. ***/**
 ---
-- **int** - stores integers (whole numbers), without decimals, such as 123 or -123
-- **double** - stores floating point numbers, with decimals, such as 19.99 or -19.99
-- **char** - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
-- **string** - stores text, such as "Hello World". String values are surrounded by double quotes
-- **bool** - stores values with two states: true or false
 
 Data Type | Size | Description
 ------------- | ----- | ----------
@@ -46,11 +41,14 @@ string | 2 bytes per character	| Stores a sequence of characters, surrounded by 
 ```
 int myNum = 5;               // Integer (whole number)
 double myDoubleNum = 5.99D;  // Floating point number
+long myLongNum = 15000000000L;
 char myLetter = 'D';         // Character
-bool myBool = true;          // Boolean
+bool myBool = true;//false          // Boolean // will print **True** / **False**
 string myText = "Hello";     // String
+//A floating point number can also be a scientific number with an "e" to indicate the power of 10:
+float f1 = 35e3F; // will print 35000
+double d1 = 12E4D; // will print 120000
 ```
-
 ---
 -- You can add the **const** keyword in front of the variable type, that value will not to be change in any case.
 ***You cannot declare a constant variable without assigning the value.** If you do, an error will occur.
@@ -61,3 +59,7 @@ myNum = 20; // error, cannot change value
 const int myNumber; // error, must assign value while declaring
 ```
 ---
+> Implicit Type Casting (automatically) - converting a smaller type to a larger type size
+> char -> int -> long -> float -> double
+> Explicit Casting (manually) - converting a larger type to a smaller size type
+> double -> float -> long -> int -> char
