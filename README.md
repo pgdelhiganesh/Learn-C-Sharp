@@ -27,6 +27,15 @@ namespace HelloWorld
 + **//** Single-line command.
 + **/*** Multi-line command. ***/**
 ---
++ The general rules for naming variables are:
+```
+// Names can contain letters, digits and the underscore character (_)  
+// Names must begin with a letter  
+// Names should start with a lowercase letter and it cannot contain whitespace  
+// Names are case sensitive ("myVar" and "myvar" are different variables)  
+// Reserved words (like C# keywords, such as int or double) cannot be used as names
+```
+---
 
 Data Type | Size | Description
 ------------- | ----- | ----------
