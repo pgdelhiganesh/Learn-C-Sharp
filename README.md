@@ -32,18 +32,31 @@ namespace HelloWorld
 - **char** - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
 - **string** - stores text, such as "Hello World". String values are surrounded by double quotes
 - **bool** - stores values with two states: true or false
+| Data Type	| Size	| Description
+| ------------- |:-----:| ----------:|
+| int	| 4 bytes	| Stores whole numbers from -2,147,483,648 to 2,147,483,647 |
+| long	| 8 bytes	| Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
+| float	| 4 bytes	| Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits |
+| double	| 8 bytes	| Stores fractional numbers. Sufficient for storing 15 decimal digits |
+| bool	| 1 bit	| Stores true or false values |
+| char	| 2 bytes	| Stores a single character/letter, surrounded by single quotes |
+| string	| 2 bytes per character	| Stores a sequence of characters, surrounded by double quotes |
+
 ```
-int myNum = 5;
-double myDoubleNum = 5.99D;
-char myLetter = 'D';
-bool myBool = true;
-string myText = "Hello";
+int myNum = 5;               // Integer (whole number)
+double myDoubleNum = 5.99D;  // Floating point number
+char myLetter = 'D';         // Character
+bool myBool = true;          // Boolean
+string myText = "Hello";     // String
 ```
+
 ---
--- If you don't want others (or yourself) to overwrite existing values, you can add the **const** keyword in front of the variable type.
-You cannot declare a constant variable without assigning the value. If you do, an error will occur: **A const field requires a value to be provided**.
+-- You can add the **const** keyword in front of the variable type, that value will not to be change in any case.
+***You cannot declare a constant variable without assigning the value.** If you do, an error will occur.
 ```
 const int myNum = 15;
-myNum = 20; // error
+myNum = 20; // error, cannot change value
+
+const int myNumber; // error, must assign value while declaring
 ```
 ---
