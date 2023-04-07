@@ -17,5 +17,10 @@ namespace HelloWorld
     }
   }
 }
-
 ```
+- **using System** means that we can use classes from the **System** namespace.
+- **namespace** is used to organize your code, and it is a container for classes and other namespaces.
+- **class** is a container for data and methods.
+- Every C# statement ends with a semicolon ;.
+- C# is **case-sensitive**: "MyClass" and "myclass" has different meaning.
+- Unlike Java, the name of the C# file does not have to match the class name
