@@ -24,3 +24,5 @@ namespace HelloWorld
 - Every C# statement ends with a semicolon ;.
 - C# is **case-sensitive**: "MyClass" and "myclass" has different meaning.
 - Unlike Java, the name of the C# file does not have to match the class name
+- **//** This is a comment
+- **/*** The code below will print the words Hello World to the screen, and it is amazing ***/**
