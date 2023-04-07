@@ -50,8 +50,8 @@ float f1 = 35e3F; // will print 35000
 double d1 = 12E4D; // will print 120000
 ```
 ---
--- You can add the **const** keyword in front of the variable type, that value will not to be change in any case.
-***You cannot declare a constant variable without assigning the value.** If you do, an error will occur.
+- You can add the **const** keyword in front of the variable type, that value will not to be change in any case.
+- ***You cannot declare a constant variable without assigning the value.** If you do, an error will occur.
 ```
 const int myNum = 15;
 myNum = 20; // error, cannot change value
@@ -59,7 +59,8 @@ myNum = 20; // error, cannot change value
 const int myNumber; // error, must assign value while declaring
 ```
 ---
-> Implicit Type Casting (automatically) - converting a smaller type to a larger type size
-> char -> int -> long -> float -> double
-> Explicit Casting (manually) - converting a larger type to a smaller size type
-> double -> float -> long -> int -> char
+> **Implicit Type Casting** (automatically) - converting a smaller type to a larger type size
+char -> int -> long -> float -> double
+> **Explicit Type Casting** (manually) - converting a larger type to a smaller size type
+double -> float -> long -> int -> char
+---
