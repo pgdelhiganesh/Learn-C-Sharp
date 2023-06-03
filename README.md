@@ -122,4 +122,20 @@ Operator | Example | Description | Example
 ! | Logical not | Reverse the result, returns False if the result is true | !(x < 5 && x < 10)
 
 ---
-
+String Math
+Console.WriteLine(Math.Max(5, 10)); //5
+Console.WriteLine(Math.Min(5, 10)); //5
+Console.WriteLine(Math.Sqrt(64)); //8
+Console.WriteLine(Math.Abs(-4.7)); //4.7
+Console.WriteLine(Math.Round(9.99)); //10
+---
+String Interpolation
+Also note that you have to use the dollar sign ($) when using the string interpolation method.
+```
+String interpolation was introduced in C# version 6.
+string firstName = "John";
+string lastName = "Doe";
+string name = $"My full name is: {firstName} {lastName}";
+Console.WriteLine(name);
+```
+---
