@@ -230,3 +230,32 @@ Output:
 8
 ```
 ---
+C# Methods
+
+//Named Arguments
+
+It is also possible to send arguments with the key: value syntax.
+
+That way, the order of the arguments does not matter:
+```
+static void MyMethod(string child1, string child2, string child3) 
+{
+  Console.WriteLine("The youngest child is: " + child3);
+}
+
+static void Main(string[] args)
+{
+  MyMethod(child3: "John", child1: "Liam", child2: "Liam");
+}
+
+// The youngest child is: John
+```
+//Method Overloading (With method overloading, multiple methods can have the same name with different parameters)
+
+Note: Multiple methods can have the same name as long as the number and/or type of parameters are different.
+```
+int MyMethod(int x)
+float MyMethod(float x)
+double MyMethod(double x, double y)
+```
+---
