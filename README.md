@@ -152,5 +152,81 @@ string[] cars = new string[] {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Create an array of four elements, omitting the new keyword, and without specifying the size
 string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+// Sort a string
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+Array.Sort(cars);
+foreach (string i in cars)
+{
+  Console.WriteLine(i);
+}
+
+// Sort an int
+int[] myNumbers = {5, 1, 8, 9};
+Array.Sort(myNumbers);
+foreach (int i in myNumbers)
+{
+  Console.WriteLine(i);
+}
+```
+```
+using System;
+using System.Linq;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int[] myNumbers = {5, 1, 8, 9};
+      Console.WriteLine(myNumbers.Max());  // returns the largest value
+      Console.WriteLine(myNumbers.Min());  // returns the smallest value
+      Console.WriteLine(myNumbers.Sum());  // returns the sum of elements
+    }
+  }
+}
+```
+---
+Multidimensional Arrays
+```
+int[,] numbers = { {1, 4, 2}, {3, 6, 8} };
+//Good to know: The single comma [,] specifies that the array is two-dimensional.
+//A three-dimensional array would have two commas: int[,,]
+```
+ | Column 0 | Column 1 | Column 2
+-------- | ---- | ----------
+row 0 | 1 | 4 | 2
+row 1 | 3 | 6 | 8
+```
+//Access Elements of a 2D Array
+int[,] numbers = { {1, 4, 2}, {3, 6, 8} };
+Console.WriteLine(numbers[0, 2]);  // Outputs 2
+
+//Change Elements of a 2D Array
+int[,] numbers = { {1, 4, 2}, {3, 6, 8} };
+numbers[0, 0] = 5;  // Change value to 5
+Console.WriteLine(numbers[0, 0]); // Outputs 5 instead of 1
+
+//Loop Through a 2D Array
+foreach (int i in numbers)
+{
+  Console.WriteLine(i);
+}
+//(or using for loop)
+//for (int i = 0; i < numbers.GetLength(0); i++) 
+//{ 
+//  for (int j = 0; j < numbers.GetLength(1); j++) 
+//  { 
+//    Console.WriteLine(numbers[i, j]); 
+//  } 
+//}  
+Output:
+1
+4
+2
+3
+6
+8
 ```
 ---
