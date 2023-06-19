@@ -123,11 +123,11 @@ Operator | Example | Description | Example
 
 ---
 String Math
-Console.WriteLine(Math.Max(5, 10)); //5
-Console.WriteLine(Math.Min(5, 10)); //5
-Console.WriteLine(Math.Sqrt(64)); //8
-Console.WriteLine(Math.Abs(-4.7)); //4.7
-Console.WriteLine(Math.Round(9.99)); //10
++ Console.WriteLine(Math.Max(5, 10)); //5
++ Console.WriteLine(Math.Min(5, 10)); //5
++ Console.WriteLine(Math.Sqrt(64)); //8
++ Console.WriteLine(Math.Abs(-4.7)); //4.7
++ Console.WriteLine(Math.Round(9.99)); //10
 ---
 String Interpolation
 Also note that you have to use the dollar sign ($) when using the string interpolation method.
@@ -137,5 +137,20 @@ string firstName = "John";
 string lastName = "Doe";
 string name = $"My full name is: {firstName} {lastName}";
 Console.WriteLine(name);
+```
+---
+Array
+```
+// Create an array of four elements, and add values later
+string[] cars = new string[4];
+
+// Create an array of four elements and add values right away 
+string[] cars = new string[4] {"Volvo", "BMW", "Ford", "Mazda"};
+
+// Create an array of four elements without specifying the size 
+string[] cars = new string[] {"Volvo", "BMW", "Ford", "Mazda"};
+
+// Create an array of four elements, omitting the new keyword, and without specifying the size
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 ```
 ---
